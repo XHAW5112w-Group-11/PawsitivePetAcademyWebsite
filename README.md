@@ -36,3 +36,12 @@ Discounts: 1 course 0%, 2 courses 5%, 3 courses 10%, 4+ courses 15%.
 - Confirm course information, prices, branding and contact details against your lecturer's brief/team-approved information.
 - This is a normal static website folder that can be committed to GitHub. GitHub Pages can host it when enabled in repository settings.
 - Manually review pages and interactions in a browser before claiming full testing.
+
+
+Joy:
+
+Website title was updated.
+
+HTML files were updated.
+
+Navigation instructions were added.
