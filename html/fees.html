@@ -1,0 +1,277 @@
+<!DOCTYPE html> 
+<html>
+
+  <head>
+     <title>PAWSITIVE PET ACADEMY</title>
+     <link rel="stylesheet" href="styles.css">
+
+<style>
+
+
+nav {
+   gridcolumn: 2;
+   justify-self: center;
+   color: black;
+}
+
+
+body {
+            background-color: #fbf3e4; /* Soft cream background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Page Container */
+        .fees-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Top Header Section */
+        .fees-header {
+            margin-bottom: 30px;
+        }
+
+        .fees-header h2 {
+            color: #102a56;
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .fees-header p {
+            color: #555;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Two-Column Grid */
+        .fees-grid {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Cards Style */
+        .fees-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Left Column: Course Selection */
+        .selection-card {
+            flex: 1.5;
+        }
+
+        .fees-card h3 {
+            color: #102a56;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .section-subtitle {
+            color: #64748b;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        /* Course Item Row */
+        .course-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .course-item label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .course-item input {
+            width: 16px;
+            height: 16px;
+            accent-color: #102a56;
+            cursor: pointer;
+        }
+
+        .course-price {
+            font-weight: 600;
+            color: #102a56;
+        }
+
+        /* Calculate Button */
+        .calc-btn {
+            background-color: #0d9488; /* Teal accent matching wireframe */
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            width: 100%;
+            margin-top: 25px;
+            text-align: center;
+            transition: opacity 0.2s;
+        }
+
+        .calc-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Right Column: Fee Summary */
+        .summary-card {
+            flex: 1;
+            height: fit-content;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+            color: #475569;
+        }
+
+        .summary-row.total {
+            border-bottom: none;
+            border-top: 2px solid #e2e8f0;
+            margin-top: 10px;
+            padding-top: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #0d9488;
+        }
+
+        /* Enquire Now Link/Button inside summary */
+        .enquire-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #0d9488;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .enquire-link:hover {
+            text-decoration: underline;
+        }
+
+</style>
+
+  </head>
+
+ <body>
+
+<nav style+"margin: 0 auto;">
+    <a href="index.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: 500;">Home</a>
+    <a href="about us.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: 500;">About Us</a>
+    <a href="contact.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: 500;">Contact</a>
+    <a href="fees.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: 500;">Fees</a>
+
+</nav>
+
+
+<div class="fees-container">
+        
+        <!-- Header Section -->
+        <div class="fees-header">
+            <h2>Calculate your fees</h2>
+            <p>Select the courses you are interested in to calculate your estimated total.</p>
+        </div>
+
+        <!-- Two Columns Layout -->
+        <div class="fees-grid">
+            
+            <!-- Left Card: Select Your Courses -->
+            <div class="fees-card selection-card">
+                <h3>Select your courses</h3>
+                <div class="section-subtitle">Select your courses</div>
+                
+                <form>
+                    <div class="course-item">
+                        <label><input type="checkbox" name="course" value="1500"> Canine Obedience Training</label>
+                        <span class="course-price">R1 500</span>
+                    </div>
+                    <div class="course-item">
+                        <label><input type="checkbox" name="course" value="1500"> Pet Grooming</label>
+                        <span class="course-price">R1 500</span>
+                    </div>
+                    <div class="course-item">
+                        <label><input type="checkbox" name="course" value="1500"> Animal Behaviour</label>
+                        <span class="course-price">R1 500</span>
+                    </div>
+                    <div class="course-item">
+                        <label><input type="checkbox" name="course" value="1500"> Pet Business Management</label>
+                        <span class="course-price">R1 500</span>
+                    </div>
+                    <div class="course-item">
+                        <label><input type="checkbox" name="course" value="750"> Puppy Care</label>
+                        <span class="course-price">R750</span>
+                    </div>
+                    <div class="course-item">
+                        <label><input type="checkbox" name="course" value="750"> Pet First Aid</label>
+                        <span class="course-price">R750</span>
+                    </div>
+                    <div class="course-item">
+                        <label><input type="checkbox" name="course" value="750"> Dog Walking</label>
+                        <span class="course-price">R750</span>
+                    </div>
+
+                    <button type="button" class="calc-btn">Calculate estimate &rarr;</button>
+                </form>
+            </div>
+
+            <!-- Right Card: Fee Summary -->
+            <div class="fees-card summary-card">
+                <h3>Fee Summary</h3>
+                
+                <div class="summary-row">
+                    <span>Number of Courses</span>
+                    <strong>2</strong>
+                </div>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong>R3 000</strong>
+                </div>
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <strong>5%</strong>
+                </div>
+                <div class="summary-row">
+                    <span>Discount Amount</span>
+                    <strong>R150</strong>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>R2 850</span>
+                </div>
+
+                <a href="contact.html" class="enquire-link">ENQUIRE NOW</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+ </body>
+
+</html>
